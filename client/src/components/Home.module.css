@@ -1,0 +1,110 @@
+/* Container general */
+.bodyContainer {
+  display: flex;
+  justify-content: left;
+
+  margin: 40px;
+  margin-bottom: 0;
+  margin-top: -20px;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+.flexContainer2 {
+  display: flex;
+}
+.aboutContainer {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.span {
+  color: var(--color-blue);
+}
+/* icons */
+.iconDownload {
+  margin-right: 5px;
+}
+.iconUser {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.infoContainer {
+  display: inline-block;
+  background-color: #fff;
+  margin-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 0;
+  border-radius: 12px;
+}
+/* Titulo */
+.titleContainer {
+  margin: 2em;
+}
+/* Parrafo */
+.paramContainer {
+  margin: 2em;
+  margin-right: 0;
+  justify-content: center;
+}
+.param {
+  width: 23em;
+  font-size: 17px;
+}
+/* Imagen */
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+.foto {
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px;
+}
+/* Button */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+.buttonCV {
+  background-color: #002f6c;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-right: 5px;
+}
+.button {
+  padding: 14px;
+  border-radius: 4px;
+  color: #000;
+  margin-right: 5px;
+  font-weight: 500;
+  background-color: #fff;
+}
+.button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.buttonCV:hover {
+  background-color: #000640;
+  cursor: pointer;
+}
+.title {
+  color: #222;
+}
+@media (max-width: 800px) {
+  .flexContainer2 {
+    display: block;
+  }
+}

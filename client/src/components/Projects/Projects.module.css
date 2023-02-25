@@ -1,0 +1,70 @@
+.flexContainer {
+  display: flex;
+}
+.title {
+  color: #00214c;
+}
+.titleProjects {
+  color: #00214c;
+  margin: 20px;
+  margin-bottom: 0;
+}
+.param {
+  font-weight: 400;
+  font-size: 22px;
+  color: #000;
+  margin: 20px;
+  margin-left: 0;
+  line-height: 32px;
+  max-width: 900px;
+}
+.projectsContainer {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.video {
+  width: 400px;
+  margin: 20px;
+  position: relative;
+}
+.hoverContainer{ 
+  position: absolute; 
+  top: 0;
+  width: 100%;
+  height: 100%;
+ 
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 800px) {
+  .flexContainer {
+    display: block;
+  }
+  .param {
+    font-weight: 400;
+    font-size: 22px;
+    color: #000;
+    margin: 20px;
+    text-align: center;
+    line-height: 32px;
+  }
+  .title {
+    text-align: center;
+  }
+  .flexProject {
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    margin: 20px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

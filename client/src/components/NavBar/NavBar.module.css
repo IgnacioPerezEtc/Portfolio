@@ -1,0 +1,93 @@
+.liContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.liItem {
+  margin: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--letter-blue);
+  list-style: none;
+}
+.liItem:hover {
+  cursor: pointer;
+  color: var(--color-blue);
+  transform: scale(0.98);
+}
+.flexContainer {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+.nav {
+  text-decoration: none;
+}
+.liItemIconGitHub {
+  margin: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.liItemIconLinkedin {
+  margin: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.textIcon {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media (min-width: 800px) {
+  .textIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .liContainer {
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .burgerContainer {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .liContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .flexContainer {
+    display: flex;
+    justify-content: left;
+  }
+  .liItemIconGitHub {
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  .liItemIconLinkedin {
+    margin: 40px;
+    margin-top: 10px;
+    list-style: none;
+  }
+}
