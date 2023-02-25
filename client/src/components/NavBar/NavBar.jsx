@@ -16,6 +16,7 @@ const NavBar = () => {
     //cuando esta true lo pasa a false y vice versa
     setClicked(!clicked)
   }
+  //hola 
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
