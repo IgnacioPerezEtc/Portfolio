@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "../Home";
-import NavBar from "../NavBar/NavBar";
-import User from "../userCard/user";
+import NavBar from "../NavBar/NavBar.jsx";
+import User from "../userCard/User.jsx";
 import style from "./Technologies.module.css";
 const Technologies = () => {
   return (
