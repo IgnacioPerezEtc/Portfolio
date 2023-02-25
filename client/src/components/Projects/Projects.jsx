@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
-import User from "../userCard/user";
+import User from "../userCard/User.jsx";
 import style from "./Projects.module.css";
 import videoPf from "../../assets/video/proyectofinal.mp4";
 import videoPi from "../../assets/video/proyectoindividual.webm";
