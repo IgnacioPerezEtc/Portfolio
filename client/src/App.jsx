@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import Technologies from "./components/Technologies/Technologies";
-import Projects from "./components/Projects/Projects";
+import Home from "./components/Home.jsx";
+import Technologies from "./components/Technologies/Technologies.jsx";
+import Projects from "./components/Projects/Projects.jsx";
 function App() {
   return (
     <BrowserRouter>
