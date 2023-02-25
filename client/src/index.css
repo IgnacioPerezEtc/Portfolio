@@ -1,7 +1,22 @@
 :root {
-  --color-red: #B71C1C;
-  --letter-red:#8c1212;
+  --color-red: #b71c1c;
+  --letter-red: #8c1212;
   --bg-dark: #071923;
   --color-blue: #002f6c;
   --letter-blue: #00214c;
+}
+
+button {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos del botón para el modo oscuro */
+.App.dark-mode button {
+  background-color: #555;
+  color: #fff;
 }
