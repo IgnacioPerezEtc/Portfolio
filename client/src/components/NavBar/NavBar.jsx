@@ -8,19 +8,21 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import BurgerButton from "../BurgerButton/BurgerButton.jsx";
+import "./NavBar.css";
 const NavBar = () => {
-  const { theme, setTheme } = useTheme();
-  const [clicked, setClicked] = useState(false)
+  let [currentClassName, setCurrentClassName] = useState("liContainer");
   const handleClick = () => {
-    //cuando esta true lo pasa a false y vice versa
-    setClicked(!clicked)
-  }
-  const changeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    if (currentClassName === "liContainer") {
+      setCurrentClassName("liContainer2");
+      console.log("liContainer2");
+    } else {
+      setCurrentClassName("liContainer");
+      console.log("liContainer");
+    }
   };
   return (
     <div className={style.flexContainer}>
-      <ul className={`${style.liContainer} .active`}>
+      <ul className={currentClassName}>
         <NavLink className={style.nav} to={"/"}>
           <li className={style.liItem}>
             <FontAwesomeIcon className={style.icon} icon={faUser} />
@@ -51,7 +53,7 @@ const NavBar = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="github"
-              class="svg-inline--fa fa-github anchor-icon"
+              className="svg-inline--fa fa-github anchor-icon"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -76,7 +78,7 @@ const NavBar = () => {
                 focusable="false"
                 data-prefix="fab"
                 data-icon="linkedin"
-                class="svg-inline--fa fa-linkedin anchor-icon"
+                className="svg-inline--fa fa-linkedin anchor-icon"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -94,8 +96,11 @@ const NavBar = () => {
         </div>
       </ul>
       <div className={style.burgerContainer}>
-        <BurgerButton />
+        <button className={style.burger} onClick={handleClick}>
+      <BurgerButton className={style.burger} onClick={handleClick} />
+      </button>
       </div>
+     
     </div>
   );
 };

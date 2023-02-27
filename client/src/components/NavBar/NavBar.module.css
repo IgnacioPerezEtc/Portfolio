@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
 }
+
 .liItem {
   margin: 40px;
   margin-top: 20px;
@@ -60,6 +61,14 @@
     margin-left: auto;
     text-align: center;
   }
+  /* .liContainer {
+    position: absolute;
+  background-color: #fff;
+  padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  } */
 }
 
 @media (min-width: 800px) {
@@ -90,4 +99,14 @@
     margin-top: 10px;
     list-style: none;
   }
+}
+
+.burger{
+  border: none;
+  background-color: #e5e5e5;
+}
+@media (min-width: 800px) {
+    .burger{
+      display: none;
+    }
 }

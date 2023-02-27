@@ -1,0 +1,33 @@
+.liContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.liContainer2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+@media (max-width: 800px) {
+  .liContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .liContainer {
+ 
+    position: absolute;
+
+    background-color: #fff;
+    padding-top: 40px;
+    margin-left: 10px;
+
+    margin-right: 0;
+
+  }
+  .liContainer2 {
+    display: none;
+  }
+}
