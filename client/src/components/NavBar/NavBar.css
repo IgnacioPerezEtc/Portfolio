@@ -3,9 +3,9 @@
   justify-content: space-evenly;
 }
 .liContainer2 {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  justify-content: space-evenly;
+}
 @media (max-width: 800px) {
   .liContainer {
     display: flex;
@@ -17,15 +17,11 @@
 }
 @media (max-width: 800px) {
   .liContainer {
- 
     position: absolute;
-
     background-color: #fff;
     padding-top: 40px;
     margin-left: 10px;
-
     margin-right: 0;
-
   }
   .liContainer2 {
     display: none;

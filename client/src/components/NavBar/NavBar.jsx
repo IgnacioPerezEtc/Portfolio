@@ -10,7 +10,7 @@ import { useTheme } from "next-themes";
 import BurgerButton from "../BurgerButton/BurgerButton.jsx";
 import "./NavBar.css";
 const NavBar = () => {
-  let [currentClassName, setCurrentClassName] = useState("liContainer");
+  let [currentClassName, setCurrentClassName] = useState("liContainer2");
   const handleClick = () => {
     if (currentClassName === "liContainer") {
       setCurrentClassName("liContainer2");
@@ -20,25 +20,28 @@ const NavBar = () => {
       console.log("liContainer");
     }
   };
+  const handleLink = () => {
+    setCurrentClassName("liContainer2");
+  };
   return (
     <div className={style.flexContainer}>
-      <ul className={currentClassName}>
+      <ul onClick={handleLink} className={currentClassName}>
         <NavLink className={style.nav} to={"/"}>
-          <li className={style.liItem}>
+          <li onClick={handleLink} className={style.liItem}>
             <FontAwesomeIcon className={style.icon} icon={faUser} />
             Acerca de mi
           </li>
         </NavLink>
 
-        <NavLink className={style.nav} to={"/tecnologias"}>
-          <li className={style.liItem}>
+        <NavLink onClick={handleLink} className={style.nav} to={"/tecnologias"}>
+          <li onClick={handleLink} className={style.liItem}>
             <FontAwesomeIcon className={style.icon} icon={faMicrochip} />
             Mis tecnologias
           </li>
         </NavLink>
 
-        <NavLink className={style.nav} to={"/proyectos"}>
-          <li className={style.liItem}>
+        <NavLink onClick={handleLink} className={style.nav} to={"/proyectos"}>
+          <li onClick={handleLink} className={style.liItem}>
             <FontAwesomeIcon className={style.icon} icon={faLightbulb} />
             Mis proyectos
           </li>
@@ -97,10 +100,9 @@ const NavBar = () => {
       </ul>
       <div className={style.burgerContainer}>
         <button className={style.burger} onClick={handleClick}>
-      <BurgerButton className={style.burger} onClick={handleClick} />
-      </button>
+          <BurgerButton className={style.burger} onClick={handleClick} />
+        </button>
       </div>
-     
     </div>
   );
 };
