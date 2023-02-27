@@ -44,8 +44,14 @@
 .textIcon {
   display: inline-block;
   margin-left: 10px;
+  text-decoration: none;
+  color: var(--letter-blue);
 }
-
+.textIcon:hover{
+  cursor: pointer;
+  color: var(--color-blue);
+  transform: scale(0.98);
+}
 @media (min-width: 800px) {
   .textIcon {
     display: none;
@@ -53,13 +59,14 @@
 }
 
 @media (max-width: 800px) {
-  .liContainer {
-    position: absolute;
-    top: -700px;
-    left: -2000px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+  .nav:active{
+    background-color: #e5e5e5;
+  }
+  .liItemIconLinkedin:active{
+    background-color: #e5e5e5;
+  }
+  .liItemIconGitHub:active{
+    background-color: #e5e5e5;
   }
   /* .liContainer {
     position: absolute;

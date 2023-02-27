@@ -46,6 +46,7 @@ const NavBar = () => {
             Mis proyectos
           </li>
         </NavLink>
+        <div className={style.nav}>
         <li className={style.liItemIconGitHub}>
           <a
             href="https://www.linkedin.com/in/ignacio-p%C3%A9rez-etchegaray-0858b724a/"
@@ -69,7 +70,7 @@ const NavBar = () => {
             </svg>
             <p className={style.textIcon}>GitHub</p>
           </a>
-        </li>
+        </li></div>
         <div className={style.nav}>
           <li className={style.liItemIconLinkedin}>
             <a
