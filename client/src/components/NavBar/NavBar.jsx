@@ -24,13 +24,7 @@ const NavBar = () => {
     setClicked(false);
   };
   const handleBurger = () => {
-    if (clicked === true) {
-      setClicked(false);
-      console.log("setted to false");
-    } else {
-      setClicked(true);
-      console.log("setted to true");
-    }
+    setClicked(!clicked);
   };
   return (
     <div className={style.flexContainer}>
