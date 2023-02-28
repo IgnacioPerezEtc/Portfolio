@@ -20,6 +20,7 @@ const NavBar = () => {
   };
   const handleLink = () => {
     setCurrentClassName("liContainer2");
+    setClicked(false);
   };
   const handleBurger = () => {
     if (clicked === true) {
