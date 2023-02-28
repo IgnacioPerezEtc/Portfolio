@@ -16,9 +16,6 @@
   width: 100%;
   transition-duration: 400ms;
 }
-.nav-icon-5 span:nth-child(2) {
-  height: 3px;
-}
 .nav-icon-5 span:nth-child(1) {
   top: 0px;
   left: 0px;

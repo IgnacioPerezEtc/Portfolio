@@ -101,10 +101,9 @@
 .title {
   color: #222;
 }
-@media (max-width:400){
-
+@media (max-width: 400) {
 }
-@media (min-width:500px){
+@media (min-width: 500px) {
   .param {
     width: 23em;
     font-size: 17px;
@@ -117,16 +116,15 @@
     padding: 0;
     object-fit: cover;
     border-radius: 50%;
-  
   }
-  .title{
+  .title {
     font-size: 25px;
   }
   .span {
     color: var(--color-blue);
     font-size: 20px;
   }
-  .Developer{
+  .Developer {
     font-size: 20px;
     margin-bottom: -15px;
   }
@@ -147,5 +145,79 @@
   .flexContainer2 {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 1600px) {
+  .foto {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .paramContainer {
+    margin: 1.4em;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .span {
+    color: var(--color-blue);
+    font-size: 20px;
+  }
+  .Developer {
+    font-size: 20px;
+    margin-bottom: -15px;
+  }
+  .param {
+    width: 19em;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1500px) {
+  .foto {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .infoContainer {
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .paramContainer {
+    margin: 1.4em;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .span {
+    color: var(--color-blue);
+    font-size: 20px;
+  }
+  .Developer {
+    font-size: 20px;
+    margin-bottom: -15px;
+  }
+  .param {
+    width: 19em;
+    text-align: center;
+    font-size: 15px;
+  }
+  .bodyContainer {
+    display: flex;
+    justify-content: left;
+    margin: 30px;
+    margin-bottom: 0;
+    margin-top: -10px;
   }
 }
