@@ -130,18 +130,23 @@
     text-decoration: none;
   }
   .liItemIconGitHub {
-    margin: 35px;
+    margin: 38px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 14px;
     list-style: none;
   }
   .liItemIconLinkedin {
-    margin: 35px;
+    margin: 38px;
     margin-top: 20px;
     font-size: 14px;
     margin-bottom: 20px;
     list-style: none;
+  }
+}
+@media (min-width: 800px) {
+  .liItemIconLinkedin {
+    margin-left: 10px;
   }
 }
 .textIcon {
