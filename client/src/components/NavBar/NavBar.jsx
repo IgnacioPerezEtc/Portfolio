@@ -17,6 +17,7 @@ const NavBar = () => {
     } else {
       setCurrentClassName("liContainer");
     }
+    handleBurger();
   };
   const handleLink = () => {
     setCurrentClassName("liContainer2");
@@ -114,7 +115,6 @@ const NavBar = () => {
             clicked={clicked}
             className={style.burger}
             handleBurger={handleBurger}
-           
           />
         </button>
       </div>
