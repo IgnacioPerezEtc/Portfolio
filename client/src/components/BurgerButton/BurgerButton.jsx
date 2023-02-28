@@ -1,8 +1,11 @@
 import React from "react";
-import "./BurgerButton.css"
-const BurgerButton = () => {
+import "./BurgerButton.css";
+const BurgerButton = ({ handleBurger, clicked }) => {
   return (
-    <div className="icon nav-icon-5">
+    <div
+      onClick={handleBurger}
+      className={`icon nav-icon-5 ${clicked ? "open" : ""} `}
+    >
       <span></span>
       <span></span>
       <span></span>
