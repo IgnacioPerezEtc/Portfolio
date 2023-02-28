@@ -20,7 +20,7 @@ const User = () => {
                 <div className={style.titleContainer}>
                   <h1 className={style.title}>Soy Ignacio Perez</h1>
                   <h2 className={style.title}>
-                    <h3>
+                    <h3 className={style.Developer}>
                       <span className={style.span}> Full Stack </span>
                       Developer
                     </h3>

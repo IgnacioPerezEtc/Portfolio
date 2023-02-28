@@ -52,7 +52,6 @@
   justify-content: center;
 }
 .param {
-  width: 23em;
   font-size: 17px;
   text-align: center;
 }
@@ -102,18 +101,40 @@
 .title {
   color: #222;
 }
+@media (max-width:400){
 
+}
+@media (min-width:500px){
+  .param {
+    width: 23em;
+    font-size: 17px;
+    text-align: center;
+  }
+}
 @media (max-width: 800px) {
   .foto {
     margin: 0;
     padding: 0;
     object-fit: cover;
     border-radius: 50%;
+  
+  }
+  .title{
+    font-size: 25px;
+  }
+  .span {
+    color: var(--color-blue);
+    font-size: 20px;
+  }
+  .Developer{
+    font-size: 20px;
+    margin-bottom: -15px;
   }
   .infoContainer {
     display: inline-block;
     background-color: #fff;
     margin: 0;
+    padding: 20px;
     border-radius: 12px;
   }
   .bodyContainer {
