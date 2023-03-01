@@ -10,14 +10,17 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import BurgerButton from "../BurgerButton/BurgerButton.jsx";
 import "./NavBar.css";
-const NavBar = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
+const NavBar = ({ handleDarkModeToggle, isDarkMode }) => {
   let [currentClassName, setCurrentClassName] = useState("liContainer2");
 
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
-    if (currentClassName === "liContainer") setCurrentClassName("liContainer2");
-    else setCurrentClassName("liContainer");
+    if (currentClassName === "liContainer") {
+      setCurrentClassName("liContainer2");
+    } else {
+      setCurrentClassName("liContainer");
+    }
     handleBurger();
   };
 

@@ -2,7 +2,6 @@
   background-color: #071923;
   width: 100%;
   height: 100%;
-  position: fixed;
 }
 
 .DarkMode .infoContainer {
@@ -32,15 +31,14 @@
 .DarkMode .titleProjects {
   color: #5374da;
 }
-.DarkMode .button{
-    background-color: #111;
-    color: #fff;
+.DarkMode .button {
+  background-color: #111;
+  color: #fff;
 }
-.button:hover{
-    background-color: #000;
-    color: #fff;
+.button:hover {
+  background-color: #000;
+  color: #fff;
 }
 .DarkMode .paramDark {
   color: #5374da;
-
 }
