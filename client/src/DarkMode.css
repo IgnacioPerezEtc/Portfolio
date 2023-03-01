@@ -1,0 +1,46 @@
+.DarkMode {
+  background-color: #071923;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.DarkMode .infoContainer {
+  background-color: #999;
+}
+.DarkMode .habilitiesContainer {
+  background-color: #999;
+}
+.DarkMode .title2 {
+  color: #5374da;
+}
+.DarkMode .title {
+  color: #5374da;
+}
+.DarkMode .param {
+  color: #e5e5e5;
+}
+.DarkMode .liItem {
+  color: #5374da;
+}
+.DarkMode .svg-inline--fa {
+  color: #5374da;
+}
+.DarkMode .imgTech:hover {
+  background-color: #777;
+}
+.DarkMode .titleProjects {
+  color: #5374da;
+}
+.DarkMode .button{
+    background-color: #111;
+    color: #fff;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.DarkMode .paramDark {
+  color: #5374da;
+
+}

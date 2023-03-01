@@ -4,57 +4,69 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/fontawesome-free-regular";
+import { faMoon } from "@fortawesome/fontawesome-free-regular";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import BurgerButton from "../BurgerButton/BurgerButton.jsx";
 import "./NavBar.css";
-const NavBar = () => {
+const NavBar = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
   let [currentClassName, setCurrentClassName] = useState("liContainer2");
+
   const [clicked, setClicked] = useState(false);
+
   const handleClick = () => {
-    if (currentClassName === "liContainer") {
-      setCurrentClassName("liContainer2");
-    } else {
-      setCurrentClassName("liContainer");
-    }
+    if (currentClassName === "liContainer") setCurrentClassName("liContainer2");
+    else setCurrentClassName("liContainer");
     handleBurger();
   };
+
   const handleLink = () => {
     setCurrentClassName("liContainer2");
     setClicked(false);
   };
+
   const handleBurger = () => {
     setClicked(!clicked);
   };
+
   return (
     <div className={style.flexContainer}>
       <ul onClick={handleLink} className={currentClassName}>
+        <li className={style.liItem} onClick={handleDarkModeToggle}>
+          {isDarkMode ? (
+            <p className={`${style.paramDark} paramDark`}>
+              <FontAwesomeIcon className={style.iconDark} icon={faMoon} />
+              Dark Mode
+            </p>
+          ) : (
+            <p className={`${style.paramDark} paramDark`}>
+              <FontAwesomeIcon icon={faSun} className={style.iconDark} />
+              Light Mode
+            </p>
+          )}
+        </li>
         <NavLink className={style.nav} to={"/"}>
-          <li onClick={handleLink} className={style.liItem}>
+          <li onClick={handleLink} className={`${style.liItem} liItem`}>
             <FontAwesomeIcon className={style.icon} icon={faUser} />
             Acerca de mi
           </li>
         </NavLink>
-
-        <NavLink onClick={handleLink} className={style.nav} to={"/tecnologias"}>
-          <li onClick={handleLink} className={style.liItem}>
+        <NavLink className={style.nav} to={"/tecnologias"}>
+          <li onClick={handleLink} className={`${style.liItem} liItem`}>
             <FontAwesomeIcon className={style.icon} icon={faMicrochip} />
             Mis tecnologias
           </li>
         </NavLink>
-
-        <NavLink onClick={handleLink} className={style.nav} to={"/proyectos"}>
-          <li onClick={handleLink} className={style.liItem}>
+        <NavLink className={style.nav} to={"/proyectos"}>
+          <li onClick={handleLink} className={`${style.liItem} liItem`}>
             <FontAwesomeIcon className={style.icon} icon={faLightbulb} />
             Mis proyectos
           </li>
         </NavLink>
         <div className={style.nav}>
           <li className={style.liItemIconGitHub}>
-            <a
-              href="https://github.com/IgnacioPerezEtc"
-              target="_blank"
-            >
+            <a href="https://github.com/IgnacioPerezEtc" target="_blank">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -104,13 +116,13 @@ const NavBar = () => {
         </div>
       </ul>
       <div className={style.burgerContainer}>
-        <button className={style.burger} onClick={handleClick}>
+        <li className={style.burger} onClick={handleClick}>
           <BurgerButton
             clicked={clicked}
             className={style.burger}
             handleBurger={handleBurger}
           />
-        </button>
+        </li>
       </div>
     </div>
   );

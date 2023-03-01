@@ -30,3 +30,6 @@
     display: none;
   }
 }
+.svg-inline--fa .fa-github .anchor-icon {
+  color: var(--color-blue);
+}

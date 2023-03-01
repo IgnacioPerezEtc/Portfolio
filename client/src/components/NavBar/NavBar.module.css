@@ -110,7 +110,7 @@
 
 .burger {
   border: none;
-  background-color: #e5e5e5;
+
 }
 @media (min-width: 800px) {
   .burger {
@@ -151,4 +151,12 @@
 }
 .textIcon {
   font-size: 12px;
+}
+.paramDark {
+  color: var(--letter-blue);
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+.iconDark{
+  margin-right: 6px;
 }

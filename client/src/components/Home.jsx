@@ -1,18 +1,17 @@
 import React from "react";
 import style from "./Home.module.css";
-import img from "../assets/img/foto.jpg";
 import NavBar from "./NavBar/NavBar";
 import About from "./About/About";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import pdf from "../assets/img/CvIgnacioPerez.pdf";
 import User from "./userCard/User.jsx";
-const Home = () => {
+const Home = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
   return (
     <div>
       <div>
-        <NavBar />
+        <NavBar
+          handleDarkModeToggle={handleDarkModeToggle}
+          setIsDarkMode={setIsDarkMode}
+          isDarkMode={isDarkMode}
+        />
       </div>
       <div className={style.flexContainer2}>
         <User />

@@ -16,10 +16,10 @@ const Projects = () => {
         </div>
         <div className={style.projectsContainer}>
           <div>
-            <h1 className={style.title}>Mis Proyectos</h1>
+            <h1 className={`${style.title} title`}>Mis Proyectos</h1>
           </div>
           <div>
-            <p className={style.param}>
+            <p className={`${style.param} param`}>
               Durante mi participación en el bootcamp, realicé dos grandes
               proyectos que me permitieron poner a prueba los conocimientos
               adquiridos y, al mismo tiempo, aprender a integrarlos en un sitio
@@ -30,7 +30,9 @@ const Projects = () => {
             <div className={style.flex}>
               <div className={style.flexProject}>
                 <figure>
-                  <h2 className={style.titleProjects}>Proyecto Final</h2>
+                  <h2 className={`${style.titleProjects} titleProjects`}>
+                    Proyecto Final
+                  </h2>
                   <a
                     className={style.link}
                     href="https://proyecto-final-client.vercel.app/"
@@ -56,7 +58,9 @@ const Projects = () => {
                 </figure>
               </div>
               <div>
-                <h2 className={style.titleProjects}>Proyecto Individual</h2>
+                <h2 className={`${style.titleProjects} titleProjects`}>
+                  Proyecto Individual
+                </h2>
                 <a
                   href="https://deploy-gamma-liard.vercel.app/"
                   target="_blank"
