@@ -220,13 +220,11 @@
   background-color: #555;
   color: #fff;
 }
-@media (max-width: 800px){
- .scroll{
-  display: none;
- } 
+.projectContainer {
+  display: inline-block;
 }
-@media(min-width: 800px){
-  .mobile{
-    display: none;
-  }
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
