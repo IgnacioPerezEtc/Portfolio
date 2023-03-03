@@ -1,11 +1,7 @@
 .DarkMode {
   background-color: #071923;
-width: 100%;
-height: 100%;
-
-
-
-
+  width: 100%;
+  height: 100%;
 }
 
 .DarkMode .infoContainer {
@@ -45,4 +41,13 @@ height: 100%;
 }
 .DarkMode .paramDark {
   color: #5374da;
+}
+.DarkMode .projectContainer {
+  background-color: #999;
+}
+.DarkMode .textIcon {
+  color: #5374da;
+}
+.DarkMode .liContainer {
+  background-color: #111;
 }

@@ -90,4 +90,16 @@
     color: #00214c;
     text-align: center;
   }
+  .param {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    margin: 20px;
+    margin-left: 0;
+    line-height: 32px;
+    text-align: center;
+  }
+  .technologiesContainer{
+    margin-top: 110px;
+  }
 }

@@ -2,7 +2,8 @@ import React from "react";
 import style from "./About.module.css";
 import reactIcon from "../../assets/icons/react-2.svg";
 import nodeIcon from "../../assets/icons/nodejs-icon.svg";
-const About = () => {
+
+function About() {
   return (
     <div className={style.about}>
       <div>
@@ -29,7 +30,7 @@ const About = () => {
                 <h2 className={style.titleHabilities}>Front End</h2>
                 <p className={style.paramHabilities}>
                   Con mis habilidades en React.js, que incluyen el uso de Redux,
-                  puedo desarrollar aplicaciones webs de alta calidad y
+                  puedo desarrollar aplicaciones web de alta calidad y
                   funcionalidad.
                 </p>
               </div>
@@ -41,9 +42,8 @@ const About = () => {
               <div>
                 <h2 className={style.titleHabilities}>Back End</h2>
                 <p className={style.paramHabilities}>
-                  Cuento con experiencia en el uso de Node junto a Express, lo
-                  cual me permite manejar información relevante de manera
-                  efectiva.
+                  Tengo experiencia en el uso de Node junto a Express, lo cual
+                  me permite manejar información relevante de manera efectiva.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const About = () => {
                 alt="PostgreSQL"
               />
               <div>
-                <h2 className={style.titleHabilities}>Data Base</h2>
+                <h2 className={style.titleHabilities}>Base de datos</h2>
                 <p className={style.paramHabilities}>
                   He adquirido experiencia utilizando PostgreSQL junto a
                   Sequelize, lo cual me permite manejar bases de datos de manera
@@ -75,7 +75,7 @@ const About = () => {
               <div>
                 <h2 className={style.titleHabilities}>Diseño UI</h2>
                 <p className={style.paramHabilities}>
-                  Cuento con experiencia en el uso de CSS, incluyendo el uso de
+                  Tengo experiencia en el uso de CSS, incluyendo el uso de
                   Flexbox, Grid y Media Queries, lo cual me permite crear
                   diseños atractivos y responsivos.
                 </p>
@@ -86,5 +86,5 @@ const About = () => {
       </div>
     </div>
   );
-};
+}
 export default About;

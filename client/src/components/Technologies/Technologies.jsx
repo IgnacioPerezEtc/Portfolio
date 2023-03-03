@@ -2,14 +2,73 @@ import React from "react";
 import NavBar from "../NavBar/NavBar.jsx";
 import User from "../userCard/User.jsx";
 import style from "./Technologies.module.css";
+
 const Technologies = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
+  const techStack = [
+    {
+      name: "React",
+      src: "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg",
+      url: "https://reactjs.org/",
+    },
+    {
+      name: "CSS3",
+      src: "https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg",
+      url: "https://www.w3schools.com/css/",
+    },
+    {
+      name: "HTML5",
+      src: "https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg",
+      url: "https://en.wikipedia.org/wiki/HTML5",
+    },
+    {
+      name: "JavaScript",
+      src: "https://profilinator.rishav.dev/skills-assets/javascript-original.svg",
+      url: "https://www.javascript.com/",
+    },
+    {
+      name: "Figma",
+      src: "https://profilinator.rishav.dev/skills-assets/figma-icon.svg",
+      url: "https://www.figma.com/",
+    },
+    {
+      name: "Git",
+      src: "https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg",
+      url: "https://github.com/",
+    },
+    {
+      name: "Node.js",
+      src: "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg",
+      url: "https://nodejs.org/",
+    },
+    {
+      name: "Express.js",
+      src: "https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg",
+      url: "https://expressjs.com/",
+    },
+    {
+      name: "PostgreSQL",
+      src: "https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg",
+      url: "https://www.postgresql.org/",
+    },
+  ];
+
+  const renderTechStack = techStack.map((tech, index) => (
+    <a href={tech.url} target="_blank" key={index}>
+      <img
+        className={`${style.imgTech} imgTech`}
+        src={tech.src}
+        alt={tech.name}
+      />
+    </a>
+  ));
+
   return (
     <div>
-      <div>
-        <NavBar  handleDarkModeToggle={handleDarkModeToggle}
-          setIsDarkMode={setIsDarkMode}
-          isDarkMode={isDarkMode} />
-      </div>
+      <NavBar
+        handleDarkModeToggle={handleDarkModeToggle}
+        setIsDarkMode={setIsDarkMode}
+        isDarkMode={isDarkMode}
+      />
       <div className={style.flexContainer}>
         <div>
           <User />
@@ -26,75 +85,12 @@ const Technologies = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
             </p>
           </div>
           <div className={style.flex}>
-            <div className={style.gridContainer}>
-              <a href="https://reactjs.org/" target="_blank">
-                <img
-                  className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
-                  alt="React"
-                />
-              </a>
-              <a href="https://www.w3schools.com/css/" target="_blank">
-                <img
-                  className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
-                  alt="CSS3"
-                />
-              </a>
-              <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
-                <img
-                  className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
-                  alt="HTML5"
-                />
-              </a>
-              <a href="https://www.javascript.com/" target="_blank">
-                <img
-                  className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
-                  alt="JavaScript"
-                />
-              </a>
-              <a href="https://www.figma.com/" target="_blank">
-                <img
-                  className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg"
-                  alt="Figma"
-                />
-              </a>
-              <a href="https://github.com/" target="_blank">
-                <img
-                  className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg"
-                  alt="Git"
-                />
-              </a>
-              <a href="https://nodejs.org/" target="_blank">
-                <img
-                 className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
-                  alt="Node.js"
-                />
-              </a>
-              <a href="https://expressjs.com/" target="_blank">
-                <img
-                   className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg"
-                  alt="Express.js"
-                />
-              </a>
-              <a href="https://www.postgresql.org/" target="_blank">
-                <img
-                   className={`${style.imgTech} imgTech`}
-                  src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg"
-                  alt="PostgreSQL"
-                />
-              </a>
-            </div>
+            <div className={style.gridContainer}>{renderTechStack}</div>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
 export default Technologies;
