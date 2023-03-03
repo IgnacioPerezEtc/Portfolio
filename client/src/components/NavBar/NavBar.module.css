@@ -110,7 +110,7 @@
 
 .burger {
   border: none;
-list-style: none;
+  list-style: none;
 }
 @media (min-width: 800px) {
   .burger {
@@ -155,8 +155,8 @@ list-style: none;
 .paramDark {
   color: var(--letter-blue);
   margin-bottom: 2px;
-  font-size: 12px;
+
 }
-.iconDark{
+.iconDark {
   margin-right: 6px;
 }
