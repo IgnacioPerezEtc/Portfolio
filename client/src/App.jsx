@@ -34,8 +34,28 @@ function App() {
               />
             }
           />
-          <Route exact path={"/tecnologias"} element={<Technologies />} />
-          <Route exact path={"/proyectos"} element={<Projects />} />
+          <Route
+            exact
+            path={"/tecnologias"}
+            element={
+              <Technologies
+                handleDarkModeToggle={handleDarkModeToggle}
+                isDarkMode={isDarkMode}
+                setIsDarkMode={setIsDarkMode}
+              />
+            }
+          />
+          <Route
+            exact
+            path={"/proyectos"}
+            element={
+              <Projects
+                handleDarkModeToggle={handleDarkModeToggle}
+                isDarkMode={isDarkMode}
+                setIsDarkMode={setIsDarkMode}
+              />
+            }
+          />
         </Routes>
       </div>
     </BrowserRouter>

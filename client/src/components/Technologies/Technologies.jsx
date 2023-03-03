@@ -2,11 +2,13 @@ import React from "react";
 import NavBar from "../NavBar/NavBar.jsx";
 import User from "../userCard/User.jsx";
 import style from "./Technologies.module.css";
-const Technologies = () => {
+const Technologies = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
   return (
     <div>
       <div>
-        <NavBar />
+        <NavBar  handleDarkModeToggle={handleDarkModeToggle}
+          setIsDarkMode={setIsDarkMode}
+          isDarkMode={isDarkMode} />
       </div>
       <div className={style.flexContainer}>
         <div>
