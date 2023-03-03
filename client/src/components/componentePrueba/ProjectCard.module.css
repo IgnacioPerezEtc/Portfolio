@@ -222,10 +222,10 @@
 }
 .projectContainer {
   display: inline-block;
-  margin: 50px;
 }
 .centrar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px;
 }

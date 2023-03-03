@@ -67,7 +67,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-
+<div className={style.centrar}>
         <div className={`${style.projectContainer} projectContainer`}>
           <div className={style.flexProject}>
             <h2 className={style.titleProjects}>Proyecto Individual</h2>
@@ -130,7 +130,7 @@ const ProjectCard = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div></div>
           </div>
         </div>
      
