@@ -155,8 +155,26 @@
 .paramDark {
   color: var(--letter-blue);
   margin-bottom: 2px;
-
 }
 .iconDark {
   margin-right: 6px;
+}
+.liItemIcon {
+  margin: 20px;
+
+  font-size: 14px;
+  list-style: none;
+}
+@media (max-width: 800px) {
+  .liItemIcon {
+    margin: 39px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    list-style: none;
+  }
+}
+.iconSocial {
+  color: var(--letter-blue);
+  font-size: 13px;
 }

@@ -2,11 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import User from "../userCard/User.jsx";
 import style from "./Projects.module.css";
-import videoPf from "../../assets/video/proyectofinal.mp4";
-import videoPi from "../../assets/video/proyectoindividual.webm";
-import iconGitHub from "../../assets/icons/github.svg";
-import iconVercel from "../../assets/icons/vercel.svg";
-import ProjectCard from "../componentePrueba/ProjectCard.jsx"
+import ProjectCard from "../componentePrueba/ProjectCard.jsx";
 function Projects({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) {
   return (
     <>
@@ -31,9 +27,11 @@ function Projects({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) {
               </p>
             </div>{" "}
             <div className={style.scroll}>
-           <ProjectCard />
+              <ProjectCard />
             </div>
-            <div className={style.mobile}><ProjectCard /></div>
+            <div className={style.mobile}>
+              <ProjectCard />
+            </div>
           </div>
         </div>
       </div>
