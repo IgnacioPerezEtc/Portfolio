@@ -224,6 +224,9 @@
  .scroll{
   display: none;
  } 
+ .title{
+  margin-top: 60px;
+ }
 }
 @media(min-width: 800px){
   .mobile{
