@@ -6,6 +6,8 @@ import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { faSun } from "@fortawesome/fontawesome-free-regular";
+import { faMoon } from "@fortawesome/fontawesome-free-regular";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import BurgerButton from "../BurgerButton/BurgerButton.jsx";
@@ -69,14 +71,14 @@ const NavBar = ({ handleDarkModeToggle, isDarkMode }) => {
             <p className={`${style.paramDark} paramDark`}>
               <FontAwesomeIcon
                 className={style.iconDark}
-                icon={["far", "moon"]}
+                icon={faMoon}
               />
               Dark Mode
             </p>
           ) : (
             <p className={`${style.paramDark} paramDark`}>
               <FontAwesomeIcon
-                icon={["far", "sun"]}
+                icon={faSun}
                 className={style.iconDark}
               />
               Light Mode
