@@ -92,14 +92,12 @@
   }
   .param {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
-    margin: 20px;
-    margin-left: 0;
-    line-height: 32px;
     text-align: center;
+    margin: 30px;
   }
-  .technologiesContainer{
+  .technologiesContainer {
     margin-top: 110px;
   }
 }

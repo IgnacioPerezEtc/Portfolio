@@ -232,4 +232,12 @@
   .mobile{
     display: none;
   }
+
+}  
+@media(max-width: 800px){
+  .param{
+
+    text-align: center;
+    margin: 30px;
+  }
 }

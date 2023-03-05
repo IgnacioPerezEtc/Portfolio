@@ -22,17 +22,17 @@ const ProjectCard = () => {
 
               <div>
                 <p className={style.paramProject}>
-                  Este proyecto involucró el desarrollo de una página web de
-                  hoteles, donde se podían ver los hoteles junto con sus
-                  habitaciones, realizar reservas, pagar con MercadoPago,
-                  filtrar por estrellas y por idioma, y también contaba con un
-                  modo de administrador para que el dueño pudiera ver
-                  estadísticas y actualizar información, entre otras
-                  funcionalidades. Mi principal aporte se centró en el diseño de
-                  la parte del Front-end, asegurándome de que la información se
-                  presentara de manera clara y visible, además de agregar
-                  funcionalidades específicas para el cliente.
+                  Este proyecto consistió en desarrollar una página web de
+                  hoteles que permitiera ver información de los hoteles, sus
+                  habitaciones, hacer reservas, pagar con MercadoPago y filtrar
+                  por estrellas e idiomas. Además, se incluyó un modo de
+                  administrador para que el dueño pudiera ver estadísticas y
+                  actualizar información. Mi principal contribución se centró en
+                  diseñar la parte del Front-end, asegurándose de que la
+                  información se presentara de manera clara y visible, y
+                  agregando funcionalidades específicas para el cliente.
                 </p>
+           
                 <div className={style.buttonContainer}>
                   <a
                     className={style.link}

@@ -23,7 +23,7 @@
   margin-top: 50px;
 }
 .video {
-  height: 200px;
+  max-height: 200px;
   margin: 15px;
 }
 
@@ -140,39 +140,7 @@
 .scroll::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-@media (max-width: 800px) {
-  .scroll {
-    margin: 1rem -1rem;
-    height: 310px;
-    overflow: visible;
-    padding: 0 1rem;
-    margin-right: 20px;
-  }
-  .param {
-    font-size: 14px;
-    margin: 10px;
-  }
-  .paramProject {
-    text-align: center;
-  }
-  .buttonContainer {
-    display: flex;
-    justify-content: center;
-  }
-  .buttonProject2 {
-    margin: 11px;
-    margin-left: 2px;
-  }
-  .buttonProject {
-    margin: 11px;
-    margin-left: 2px;
-  }
-  .buttonDeploy {
-    margin: 11.6px;
-    margin-left: 2px;
-    margin-right: 5px;
-  }
-}
+
 .buttonProject {
   margin: 2px;
   padding: 6px;
@@ -227,4 +195,58 @@
   overflow: auto;
   padding: 0 1rem;
   margin-right: 20px;
+}
+
+@media (max-width: 1250px) {
+.flex{
+  display: block;
+}
+}
+@media (max-width: 800px) {
+  .scroll {
+    margin: 1rem -1rem;
+    height: 310px;
+    overflow: visible;
+    padding: 0 1rem;
+    margin-right: 20px;
+  }
+  .param {
+    font-size: 14px;
+    margin: 10px;
+  }
+  .paramProject {
+    text-align: center;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .buttonProject2 {
+    margin: 11px;
+    margin-left: 2px;
+  }
+  .buttonProject {
+    margin: 11px;
+    margin-left: 2px;
+  }
+  .buttonDeploy {
+    margin: 11.6px;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  .flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .paramProject{
+    max-width: 18em;
+    line-height: 20px;
+  }
+  .video{
+    max-width: 18em;
+  }
+  .titleProjects{
+    text-align: center;
+  }
 }
