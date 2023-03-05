@@ -69,18 +69,12 @@ const NavBar = ({ handleDarkModeToggle, isDarkMode }) => {
         <li className={style.liItem} onClick={handleDarkModeToggle}>
           {isDarkMode ? (
             <p className={`${style.paramDark} paramDark`}>
-              <FontAwesomeIcon
-                className={style.iconDark}
-                icon={faMoon}
-              />
+              <FontAwesomeIcon className={style.iconDark} icon={faMoon} />
               Dark Mode
             </p>
           ) : (
             <p className={`${style.paramDark} paramDark`}>
-              <FontAwesomeIcon
-                icon={faSun}
-                className={style.iconDark}
-              />
+              <FontAwesomeIcon icon={faSun} className={style.iconDark} />
               Light Mode
             </p>
           )}
@@ -95,12 +89,13 @@ const NavBar = ({ handleDarkModeToggle, isDarkMode }) => {
         ))}
         {socialLinks.map((link, index) => (
           <div key={index} className={style.nav}>
-            <li className={style.liItemIcon}>
-              <a href={link.href} target="_blank">
+            <a href={link.href} target="_blank">
+             
+              <li className={style.liItemIcon}>
                 {link.icon}
                 <p className={`${style.textIcon} textIcon`}> {link.text}</p>
-              </a>
-            </li>
+              </li>
+            </a>
           </div>
         ))}
       </ul>
