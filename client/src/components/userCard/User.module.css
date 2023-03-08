@@ -6,6 +6,14 @@
   margin-bottom: 0;
   margin-top: 5px;
 }
+.infoContainer {
+  display: inline-block;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0px 6px 8px 4px rgba(0, 0, 0, 0.15);
+}
 .flexContainer {
   display: flex;
   flex-direction: column;
@@ -73,15 +81,22 @@
   font-weight: 500;
   background-color: #fff;
 }
-
+.buttonCV {
+  background-color: #002f6c;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-right: 5px;
+}
 .buttonCV:hover {
   background-color: #000640;
   cursor: pointer;
 }
+
 .title {
   color: #222;
-}
-@media (max-width: 400) {
 }
 @media (min-width: 500px) {
   .param {
@@ -127,6 +142,9 @@
     display: flex;
     justify-content: center;
   }
+  .infoContainer {
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 1600px) {
   .foto {
@@ -157,7 +175,16 @@
     text-align: center;
     font-size: 17px;
   }
+  .infoContainer {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    box-shadow: 0px 6px 8px 4px rgba(0, 0, 0, 0.15);
+  }
 }
+
 @media (max-width: 1500px) {
   .foto {
     width: 15em;
@@ -167,12 +194,14 @@
     margin: 10px;
   }
   .infoContainer {
-    display: inline-block;
     background-color: #fff;
-    margin: 0;
-    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 12px;
+    box-shadow: 0px 6px 8px 4px rgba(0, 0, 0, 0.15);
   }
+
   .paramContainer {
     margin: 1.4em;
     margin-right: 0;
@@ -201,32 +230,4 @@
     margin-bottom: 0;
     margin-top: -10px;
   }
-}
-.buttonCV {
-  background-color: #002f6c;
-  padding: 16px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  color: #fff;
-  margin-right: 5px;
-}
-
-.infoContainer {
-  margin-bottom: 70px;
-  margin-top: 0;
-}
-@media (max-width: 800px) {
-  .infoContainer {
-    margin-bottom: 0px;
-  }
-}
-.infoContainer {
-  background-color: #fff;
-  margin-bottom: 60px;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 6px 8px 4px rgba(0, 0, 0, 0.15);
 }

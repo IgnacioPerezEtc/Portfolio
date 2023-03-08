@@ -148,7 +148,9 @@
     font-size: 22px;
   }
   .title2 {
-    font-size: 22px;
+    font-size: 25px;
+    margin-top: -20px;
+    margin-bottom: 18px;
   }
   .titleHabilities {
     font-size: 19px;
