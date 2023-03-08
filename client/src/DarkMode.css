@@ -1,7 +1,8 @@
 .DarkMode {
   background-color: #071923;
   width: 100%;
-  height: 100%;
+  height: 120vh;
+  position: absolute;
 }
 .DarkMode .infoContainer {
   background-color: #999;

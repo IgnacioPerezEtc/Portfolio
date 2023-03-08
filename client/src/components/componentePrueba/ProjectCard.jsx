@@ -19,7 +19,6 @@ const ProjectCard = () => {
                 loop
                 controls
               ></video>
-
               <div>
                 <p className={style.paramProject}>
                   Este proyecto consistió en desarrollar una página web de
@@ -32,7 +31,7 @@ const ProjectCard = () => {
                   información se presentara de manera clara y visible, y
                   agregando funcionalidades específicas para el cliente.
                 </p>
-           
+
                 <div className={style.buttonContainer}>
                   <a
                     className={style.link}
