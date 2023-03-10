@@ -31,6 +31,12 @@
     width: 155%;
   }
 }
+@media (max-width:900px) {
+  .DarkMode {
+    position: static;
+    width: 100%;
+  }
+}
 .DarkMode .infoContainer {
   background-color: #999;
 }
