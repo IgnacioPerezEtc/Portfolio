@@ -54,6 +54,9 @@
 .reactIcon {
   margin-top: 0;
 }
+.nodeIcon{
+  margin-top: 25px;
+}
 @media (max-width: 800px) {
   .title {
     color: #00214c;
