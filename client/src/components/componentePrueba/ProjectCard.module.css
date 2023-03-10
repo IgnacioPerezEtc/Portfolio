@@ -214,6 +214,9 @@
     font-size: 14px;
     margin: 10px;
   }
+  .paramText{
+    display: none;
+  }
   .paramProject {
     text-align: center;
   }

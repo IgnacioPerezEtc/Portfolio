@@ -26,10 +26,10 @@ const ProjectCard = () => {
                   habitaciones, hacer reservas, pagar con MercadoPago y filtrar
                   por estrellas e idiomas. Además, se incluyó un modo de
                   administrador para que el dueño pudiera ver estadísticas y
-                  actualizar información. Mi principal contribución se centró en
+                  actualizar información. <p className={style.paramText}>Mi principal contribución se centró en
                   diseñar la parte del Front-end, asegurándose de que la
                   información se presentara de manera clara y visible, y
-                  agregando funcionalidades específicas para el cliente.
+                  agregando funcionalidades específicas para el cliente.</p> 
                 </p>
 
                 <div className={style.buttonContainer}>
@@ -90,9 +90,10 @@ const ProjectCard = () => {
                   individual. Consistió en una aplicación de una sola página
                   dedicada a Pokémon, donde debía mostrar los pokémon
                   disponibles utilizando una API externa y una base de datos
-                  creada. Además de esto, en el Front-end tuve que agregar
+                  creada.
+                  <p className={style.paramText}>Además de esto, en el Front-end tuve que agregar
                   filtros, crear nuevos pokémon, manejar errores visibles para
-                  los clientes y muchas otras funciones.
+                  los clientes y muchas otras funciones.</p> 
                 </p>
 
                 <div className={style.buttonContainer}>
