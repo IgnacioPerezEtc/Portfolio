@@ -78,12 +78,11 @@
 .button {
   padding: 12px;
   border-radius: 4px;
-  color: #000;
-  margin: 0;
+font-weight: 500;
   margin-right: 5px;
-  font-weight: 500;
   background-color: #fff;
   cursor: pointer;
+  border: solid 2px #111;
 }
 .buttonCV {
   background-color: #002f6c;
@@ -92,8 +91,7 @@
   border: none;
   outline: none;
   color: #fff;
-
-  margin: -0.2px;
+  font-weight: 500;
   margin-right: 5px;
 }
 .buttonCV:hover {
