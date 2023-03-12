@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import img from "../../assets/img/foto.jpg";
 import pdf from "../../assets/img/CvIgnacioPerez.pdf";
 import style from "./User.module.css";
@@ -49,9 +49,17 @@ const User = () => {
                   </button>
                 </a>
                 <NavLink to="/">
-                  <button className={`${style.button} button`}>
-                    <FontAwesomeIcon className={style.iconUser} icon={faUser} />
-                    Acerca de mi
+                  <button
+                    className={`${style.button} button`}
+                    onClick={() =>
+                      window.open("mailto:nachoperezetc@gmail.com")
+                    }
+                  >
+                    <FontAwesomeIcon
+                      className={style.iconUser}
+                      icon={faEnvelope}
+                    />
+                    Contactame
                   </button>
                 </NavLink>
               </div>
