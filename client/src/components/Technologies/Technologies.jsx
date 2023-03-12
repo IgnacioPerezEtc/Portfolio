@@ -70,9 +70,12 @@ const Technologies = ({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) => {
         isDarkMode={isDarkMode}
       />
       <div className={style.flexContainer}>
-        <div>
+        <div className={style.userContainer}>
+                <div className={style.user}>
           <User />
         </div>
+        </div>
+  
         <div className={style.technologiesContainer}>
           <div>
             <h1 className={`${style.title} title`}>Mis tecnologias</h1>

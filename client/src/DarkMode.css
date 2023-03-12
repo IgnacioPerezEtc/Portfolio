@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .DarkMode {
     background-color: #071923;
     width: 100%;
@@ -25,13 +25,13 @@
     width: 140%;
   }
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .DarkMode {
     position: static;
     width: 155%;
   }
 }
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .DarkMode {
     position: static;
     width: 100%;

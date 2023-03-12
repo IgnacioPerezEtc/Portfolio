@@ -12,7 +12,7 @@ function Projects({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) {
         isDarkMode={isDarkMode}
       />
       <div className={style.flexContainer}>
-        <div>
+        <div className={style.userContainer}>
           <User />
         </div>
         <div className={style.projectsContainer}>

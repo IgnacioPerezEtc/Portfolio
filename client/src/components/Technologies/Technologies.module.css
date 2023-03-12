@@ -17,14 +17,15 @@
 .technologiesContainer {
   margin: 0 auto;
   margin-top: 50px;
+
 }
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
 .gridContainer {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px; 
 }
 .imgTech {
   width: 7em;
@@ -99,5 +100,19 @@
   }
   .technologiesContainer {
     margin-top: 110px;
+  }
+}
+.technologiesContainer{
+  margin-bottom: 0;
+}@media (max-width: 800px) {
+  .userContainer {
+    display: none;
+  }
+  .title {
+    margin-top: -80px;
+    margin-bottom: 40px;
+  }
+  .param {
+    margin-bottom: 70px;
   }
 }

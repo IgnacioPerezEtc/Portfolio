@@ -66,19 +66,22 @@ const NavBar = ({ handleDarkModeToggle, isDarkMode }) => {
   return (
     <div className={style.flexContainer}>
       <ul onClick={handleLink} className={currentClassName}>
-        <li className={style.liItem} onClick={handleDarkModeToggle}>
-          {isDarkMode ? (
-            <p className={`${style.paramDark} paramDark`}>
-              <FontAwesomeIcon className={style.iconDark} icon={faMoon} />
-              Dark Mode
-            </p>
-          ) : (
-            <p className={`${style.paramDark} paramDark`}>
-              <FontAwesomeIcon icon={faSun} className={style.iconDark} />
-              Light Mode
-            </p>
-          )}
-        </li>
+        <div className={style.divDark} onClick={handleDarkModeToggle}>
+          <li className={style.liItem}>
+            {isDarkMode ? (
+              <p className={`${style.paramDark} paramDark`}>
+                <FontAwesomeIcon className={style.iconDark} icon={faMoon} />
+                Dark Mode
+              </p>
+            ) : (
+              <p className={`${style.paramDark} paramDark`}>
+                <FontAwesomeIcon icon={faSun} className={style.iconDark} />
+                Light Mode
+              </p>
+            )}
+          </li>
+        </div>
+
         {NavLinks.map((link, index) => (
           <NavLink key={index} className={style.nav} to={link.to}>
             <li onClick={handleLink} className={`${style.liItem} liItem`}>
@@ -90,7 +93,6 @@ const NavBar = ({ handleDarkModeToggle, isDarkMode }) => {
         {socialLinks.map((link, index) => (
           <div key={index} className={style.nav}>
             <a href={link.href} target="_blank">
-             
               <li className={style.liItemIcon}>
                 {link.icon}
                 <p className={`${style.textIcon} textIcon`}> {link.text}</p>

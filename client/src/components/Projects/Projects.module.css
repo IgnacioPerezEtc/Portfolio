@@ -121,8 +121,6 @@
   padding: 0 1rem;
   margin-right: 20px;
 }
-/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
-
 .scroll::-webkit-scrollbar {
   -webkit-appearance: none;
 }
@@ -220,24 +218,34 @@
   background-color: #555;
   color: #fff;
 }
-@media (max-width: 800px){
- .scroll{
-  display: none;
- } 
- .title{
-  margin-top: 60px;
- }
-}
-@media(min-width: 800px){
-  .mobile{
+@media (max-width: 800px) {
+  .scroll {
     display: none;
   }
-
-}  
-@media(max-width: 800px){
-  .param{
-
+  .title {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .param {
     text-align: center;
     margin: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .userContainer {
+    display: none;
+  }
+  .title {
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
+  .param {
+    margin-bottom: 70px;
   }
 }
