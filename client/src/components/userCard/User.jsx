@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import img from "../../assets/img/foto.jpg";
-import pdf from "../../assets/img/CvIgnacioPerez.pdf";
+import pdf from "../../assets/img/Curriculum-Vitae-Ignacio-Perez.pdf";
 import style from "./User.module.css";
 
 const User = () => {
@@ -38,7 +38,7 @@ const User = () => {
                   href={pdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="CvIgnacioPerez.pdf"
+                  download="Curriculum-Vitae-Ignacio-Perez.pdf"
                 >
                   <button className={style.buttonCV}>
                     <FontAwesomeIcon

@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import User from "../userCard/User.jsx";
 import style from "./Projects.module.css";
-import ProjectCard from "../componentePrueba/ProjectCard.jsx";
+import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 function Projects({ handleDarkModeToggle, isDarkMode, setIsDarkMode }) {
   return (
     <>
