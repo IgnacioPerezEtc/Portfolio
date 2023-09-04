@@ -12,6 +12,7 @@ function App() {
   );
 
   useEffect(() => {
+    document.body.style.backgroundColor = isDarkMode ? "#071923" : "#e5e5e5";
     localStorage.setItem("isDarkMode", isDarkMode);
   }, [isDarkMode]);
 
