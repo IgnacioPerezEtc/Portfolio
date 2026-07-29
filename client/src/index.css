@@ -1,7 +1,9 @@
-:root {
-  --color-red: #b71c1c;
-  --letter-red: #8c1212;
-  --bg-dark: #071923;
-  --color-blue: #002f6c;
-  --letter-blue: #00214c;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+:root { font-family: "DM Sans", sans-serif; color: #f1f5f9; background: #0c1018; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+body { margin: 0; min-width: 320px; }
+button, a { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
