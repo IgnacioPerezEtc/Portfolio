@@ -32,6 +32,8 @@ function App() {
   const [copied, setCopied] = useState(false);
   const [hideHeader, setHideHeader] = useState(false);
   const lastScrollY = useRef(0);
+  const isNavigatingRef = useRef(false);
+  const navTimeoutRef = useRef(null);
 
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? "dark" : "light";
@@ -42,6 +44,10 @@ function App() {
     lastScrollY.current = window.scrollY;
     const onScroll = () => {
       const currentY = window.scrollY;
+      if (isNavigatingRef.current) {
+        lastScrollY.current = currentY;
+        return;
+      }
       const scrollingDown = currentY > lastScrollY.current;
       setHideHeader(scrollingDown && currentY > 96);
       lastScrollY.current = currentY;
@@ -51,6 +57,15 @@ function App() {
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
+  const handleNavLinkClick = () => {
+    closeMenu();
+    isNavigatingRef.current = true;
+    setHideHeader(false);
+    clearTimeout(navTimeoutRef.current);
+    navTimeoutRef.current = setTimeout(() => {
+      isNavigatingRef.current = false;
+    }, 1000);
+  };
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText("nachoperezetc@gmail.com");
@@ -64,15 +79,15 @@ function App() {
   return (
     <div className="site-shell">
       <header className={hideHeader && !menuOpen ? "header header--hidden" : "header"}>
-        <a className="brand" href="#inicio" onClick={closeMenu} aria-label="Ir al inicio">
-          <span>IP</span><i />
+        <a className="brand" href="#inicio" onClick={handleNavLinkClick} aria-label="Ir al inicio">
+          <span>Inicio</span><i />
         </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Abrir navegación" aria-expanded={menuOpen}>
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
         <nav className={menuOpen ? "navigation is-open" : "navigation"} aria-label="Navegación principal">
           {[["Experiencia", "experiencia"], ["Proyectos", "proyectos"], ["Stack", "stack"], ["Contacto", "contacto"]].map(([label, id]) => (
-            <a href={`#${id}`} key={id} onClick={closeMenu}>{label}</a>
+            <a href={`#${id}`} key={id} onClick={handleNavLinkClick}>{label}</a>
           ))}
           <button className="theme-toggle" onClick={() => setDark(!dark)} aria-label={dark ? "Activar tema claro" : "Activar tema oscuro"}>
             {dark ? <FiSun /> : <FiMoon />}
