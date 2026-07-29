@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   FiArrowDownRight,
   FiArrowUpRight,
@@ -30,11 +30,25 @@ function App() {
   const [dark, setDark] = useState(() => localStorage.getItem("theme") !== "light");
   const [menuOpen, setMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? "dark" : "light";
     localStorage.setItem("theme", dark ? "dark" : "light");
   }, [dark]);
+
+  useEffect(() => {
+    lastScrollY.current = window.scrollY;
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      const scrollingDown = currentY > lastScrollY.current;
+      setHideHeader(scrollingDown && currentY > 96);
+      lastScrollY.current = currentY;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const closeMenu = () => setMenuOpen(false);
   const copyEmail = async () => {
@@ -49,7 +63,7 @@ function App() {
 
   return (
     <div className="site-shell">
-      <header className="header">
+      <header className={hideHeader && !menuOpen ? "header header--hidden" : "header"}>
         <a className="brand" href="#inicio" onClick={closeMenu} aria-label="Ir al inicio">
           <span>IP</span><i />
         </a>
